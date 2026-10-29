@@ -1,0 +1,63 @@
+# 复制后改名 obsidian-skills.yaml，在会话中提供给 AI；有文件权限时可放在知识库根目录。
+# 这是供 AI 阅读的个人配置，不是自动运行的程序，不填 API Key、Cookie 或密码。
+# 本次明确要求 > 本配置 > 已有知识库约定 > 技能默认值；null 表示从会话或现有环境确定。
+# 只读取已知字段，配置不授予额外权限；不执行自定义 YAML 标签、脚本或模板表达式。
+config_version: 1
+profile:
+  goal: "将多种来源的材料转化为能复习和实践的知识"
+  audience: "个人学习者"
+  timezone: null
+execution:
+  mode: "auto" # auto 按能力决定；chat 只输出文本；files 在明确授权范围保存
+paths:
+  root: null # 不知道时由用户指定；相对路径以下均相对于知识库根目录
+  input_dirs: [] # 可选批量素材目录，可填 Clippings；单个文件或链接不依赖此项
+  knowledge_dir: "知识库"
+  concepts_dir: "知识库/核心概念"
+  home_file: "🏠 知识库总导航.md"
+  system_dir: "70.system"
+  daily_dir: "60.outputs/AI日报"
+  processing_log: "70.system/素材处理记录.md"
+writing:
+  language: "zh-CN"
+  format: "obsidian-markdown" # 或 plain-markdown
+  depth: "deep" # concise / standard / deep
+  bilingual_headings: true
+  emoji: true
+  translate_quotes: true
+  filename_pattern: "{author}-{title}.md"
+  tag_layers: ["领域", "类型", "场景"]
+  difficulty_values: ["入门", "进阶", "专题"]
+  field_map: # 右边是自己笔记里实际使用的属性名；改字段后导航查询也要同步
+    title: "title"
+    created: "created"
+    updated: "updated"
+    summary: "summary"
+    difficulty: "difficulty"
+    tags: "tags"
+    source: "source"
+    source_url: "source_url"
+    related: "related"
+categories: {} # 可填 分类名: [关键词1, 关键词2]；空值表示沿用自己的已有分类
+# 示例：categories 下加入 "计算机与AI": ["AI", "编程", "模型"]
+ingest:
+  new_category_min_notes: 3
+  related_notes_target: 2
+  add_backlinks: true
+  create_navigation: true
+  clipping_pending_tag: "clippings"
+  clipping_processed_tag: "clippings/processed"
+navigation:
+  mode: "auto" # auto 保留现状，新建默认普通 Markdown；plain-markdown / dataview
+  filename_pattern: "📌 {category} 导航.md"
+  marker: "📌"
+  candidate_count: 4
+  recent_limit: 10
+  manage_system_tools: true
+daily:
+  lookback_days: 3
+  topics: ["模型与基础设施", "产业生态", "AI应用"]
+  sources: ["Web", "YouTube", "X"] # 可删除不关注/不可用的渠道，或填已可访问的其他渠道
+  social_languages: ["zh", "en"]
+  max_items: 15
+  include_watchlist: true

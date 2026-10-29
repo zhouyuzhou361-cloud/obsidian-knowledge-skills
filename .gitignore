@@ -1,0 +1,27 @@
+# Personal configuration and source material do not belong in this public package.
+.obsidian/
+obsidian-skills.yaml
+.env
+.env.*
+!.env.example
+*cookies*
+*credentials*
+accounts.db*
+*.sqlite*
+*.db
+*.log
+# Common local credentials and workspace caches
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+.netrc
+.npmrc
+.aws/
+.ssh/
+work/
+
+__pycache__/
+.DS_Store
+Thumbs.db
