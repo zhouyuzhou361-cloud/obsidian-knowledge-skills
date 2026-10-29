@@ -8,6 +8,7 @@
 
 ```text
 README.md
+README.en.md
 LICENSE
 SECURITY.md
 .gitignore
@@ -49,9 +50,9 @@ docs/
 ## 3. 上传文件
 
 1. 在新仓库的 **Code** 页面，点击 **Add file → Upload files**。
-2. 从本地解压文件夹中，将 `skills/`、`standalone/`、`docs/` 三个目录及六个根目录文件拖进上传区域。拖目录可以保留其内部层级。
+2. 从本地解压文件夹中，将 `skills/`、`standalone/`、`docs/` 三个目录及七个根目录文件拖进上传区域。拖目录可以保留其内部层级。
 3. 等待上传完成，检查列表中的路径：应直接出现 `README.md` 与 `skills/knowledge-ingest/SKILL.md`，不能变成 `obsidian-knowledge-skills/README.md`。
-4. 根目录现有的初始化 README 可以由这次发布版 README 替换。确认 LICENSE、SECURITY.md、配置模板和两份点开头的文件也选中。
+4. 根目录现有的初始化 README 可以由这次发布版 README 替换。确认中英文 README、LICENSE、SECURITY.md、配置模板和两份点开头的文件也选中。
 5. 下方提交说明填写：`Publish multi-source knowledge skills with personalized configuration`。
 6. 这是你自己的全新仓库时，选择直接提交到默认分支（通常为 main）；如界面只能提出更改，则按提示创建并合并自己的 Pull Request。
 7. 点击 **Commit changes** 或界面提供的 **Propose changes** 完成提交；若创建了 Pull Request，合并后才会出现在默认分支。

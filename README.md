@@ -1,5 +1,7 @@
 # 🧠 Obsidian Knowledge Skills
 
+**简体中文** | [English](README.en.md)
+
 把视频、PDF、文章、音频和流媒体内容，整理成可复习、可关联、可实践的个人知识。
 
 三个可独立使用的 AI 技能：**整理知识库 · 更新总导航 · AI 行业日报**。面向能理解并执行文本指令的不同 AI 模型，不绑定 Claude Code；按你的目标、目录和写作偏好工作。
@@ -102,7 +104,8 @@ skills/ai-industry-daily/      # AI 行业日报
 
 ```text
 obsidian-knowledge-skills/
-├── README.md
+├── README.md                    # 中文说明
+├── README.en.md                 # English guide
 ├── LICENSE
 ├── SECURITY.md                    # 安全边界与反馈说明
 ├── obsidian-skills.example.yaml   # 个人配置模板
